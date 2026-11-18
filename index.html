@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Project Evaluator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>AI Project Evaluator</h2>
+    <p>Smart Project Assessment System</p>
+</header>
+
+<div class="container">
+
+    <h2>Submit Your Project</h2>
+
+    <label>Student Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label>Project Title</label>
+    <input type="text" id="title" placeholder="Enter project title">
+
+    <label>Upload Project</label>
+    <input type="file" id="file" accept=".txt,.md">
+
+    <label>Project Description</label>
+    <textarea id="description" placeholder="Enter your project details"></textarea>
+
+    <button onclick="evaluateProject()">Evaluate Project</button>
+
+    <div id="result" class="result">
+        <h2>Evaluation Result</h2>
+        <h1 id="marks">0/100</h1>
+        <h3 id="grade"></h3>
+        <p id="feedback"></p>
+        <div id="breakdown"></div>
+    </div>
+
+</div>
+
+<footer>
+    <p>AI Project Evaluator | College AIML Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
